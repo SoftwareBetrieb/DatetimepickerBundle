@@ -2,7 +2,7 @@
 
 This bundle implements the [Bootstrap DateTime Picker](https://github.com/smalot/bootstrap-datetimepicker) in a Form Type for Symfony 2.*. The bundle structure is inspired by GenemuFormBundle.
 
-Demo : http://www.malot.fr/bootstrap-datetimepicker/demo.php
+Demo: http://www.malot.fr/bootstrap-datetimepicker/demo.php
 
 Please feel free to contribute, to fork, to send merge request and to create ticket.
 
@@ -59,7 +59,7 @@ for a translation other than German ("de") or remove if your are fine with Engli
 ``` twig
 	{% javascripts
 	    "@SCDatetimepickerBundle/Resources/public/js/bootstrap-datetimepicker.js"
-	    "@SCDatetimepickerBundle/Resources/public/js//locales/bootstrap-datetimepicker.de.js"
+	    "@SCDatetimepickerBundle/Resources/public/js/locales/bootstrap-datetimepicker.de.js"
 	%}
 	<script src="{{ asset_url }}"></script>
 	{% endjavascripts %}
@@ -107,7 +107,7 @@ public function buildForm(FormBuilder $builder, array $options)
 
 Create a new JavaScript file (or add to one of your existing ones):
 
-''' js
+``` javascript
 $(document).ready(function() {
 	$('*[data-autostart-datetimepicker]').datetimepicker();
 });
@@ -119,7 +119,7 @@ HTML and JS is not a good idea from an architectural point.
 
 ## DateTimePicker Documentation
 
-The documentation of the datetime picker is here : http://www.malot.fr/bootstrap-datetimepicker/#options
+The documentation of the datetime picker is here: http://www.malot.fr/bootstrap-datetimepicker/#options
 
 ## Notes
 
